@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2020", // babel will transpile
+    "module": "es2015",
+    "allowJs": true,
+    "jsx": "react",
+    "noEmit": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+
+    // make `tsc` throw an error if an unsupported feature is used
+    // if set true all implementation files must be modules (import or export something)
+    "isolatedModules": true,
+
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  },
+
+  "include": ["src/**/*", "__tests__/**/*", "dist/index.d.ts"]
+}
